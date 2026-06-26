@@ -1,10 +1,8 @@
 # sber_statement
 
-[![Tests](https://github.com/YOUR_USER/sber_statement/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USER/sber_statement/actions/workflows/test.yml)
+[![Tests](https://github.com/tarovik/sber_statement/actions/workflows/test.yml/badge.svg)](https://github.com/tarovik/sber_statement/actions/workflows/test.yml)
 
 Парсинг выписки СберБанка из PDF в CSV.
-
-> ⚠️ Замените `YOUR_USER` в ссылке бейджа на ваш GitHub username после создания репозитория.
 
 Извлекает все операции (зачисления, списания, мультивалютные транзакции) из слабоструктурированного PDF-формата СберБанка и сохраняет в плоский CSV-файл для дальнейшего анализа.
 
@@ -25,7 +23,7 @@
 ### Вариант 1: git clone
 
 ```bash
-git clone https://github.com/YOUR_USER/sber_statement.git
+git clone https://github.com/tarovik/sber_statement.git
 cd sber_statement
 ```
 
