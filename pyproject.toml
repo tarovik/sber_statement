@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sber_statement"
+version = "1.0.0"
+description = "Парсинг выписки СберБанка из PDF в CSV"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Evgeny Tarovik" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+    "Intended Audience :: End Users/Desktop",
+]
+dependencies = [
+    "pdfplumber>=0.11,<1.0",
+]
+
+[project.scripts]
+sberbank-parse = "parse:main"
+
+[tool.setuptools]
+py-modules = [
+    "parse",
+]
